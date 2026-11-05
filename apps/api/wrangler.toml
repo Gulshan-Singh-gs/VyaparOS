@@ -1,0 +1,15 @@
+name = "vyapar-os-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "development"
+
+# Secrets (set via `wrangler secret put <NAME>`):
+# DATABASE_URL
+# SUPABASE_URL
+# SUPABASE_ANON_KEY
+# SUPABASE_SERVICE_ROLE_KEY
+# GEMINI_API_KEY
+

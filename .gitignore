@@ -1,0 +1,87 @@
+# ─────────────────────────────────────────────────────────────
+# VyaparOS Monorepo .gitignore
+# ─────────────────────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# Turborepo & Build Artifacts
+.turbo/
+dist/
+dist-ssr/
+build/
+out/
+*.tsbuildinfo
+
+# Vite & Development Caches
+.vite/
+.vite-temp/
+.parcel-cache/
+
+# Cloudflare Workers & Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+wrangler.out/
+
+# Environment Variables & Secrets (NEVER COMMIT SECRETS)
+.env
+.env.*
+!.env.example
+*.env.local
+*.pem
+*.key
+*.cert
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+playwright-report/
+blob-report/
+test-results/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Android / Capacitor Native Builds
+apps/web/android/app/build/
+apps/web/android/.gradle/
+apps/web/android/local.properties
+apps/web/android/captures/
+*.apk
+*.aab
+
+# Temporary & Swap Files
+*.swp
+*.swo
+*~
+*.tmp
+.temp/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor Configuration
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+
